@@ -170,8 +170,8 @@ class maas::params {
           $maas_region_admin       = '/usr/sbin/maas-region-admin'
           $import_boot_image_flags = 'node-groups import-boot-images'
         }
-        '16.04':{
-          $maas_packages  = [
+        '16.04': {
+          $maas_packages = [
             'maas',
             'maas-cli',
             'maas-common',
@@ -221,11 +221,11 @@ class maas::params {
   $maas_api_key                    = undef
   $maas_cluster_uuid               = undef
 
-  $maas_root_directories   = ['/etc/maas',
-                              '/etc/maas/templates',
-                              '/etc/maas/preseeds',
-                              '/usr/share/maas',
-                              '/var/lib/maas',]
+  $maas_root_directories           = ['/etc/maas',
+                                      '/etc/maas/templates',
+                                      '/etc/maas/preseeds',
+                                      '/usr/share/maas',
+                                      '/var/lib/maas',]
   # Default Settings
   $maas_debug_mode                 = 'False'
   $maas_media_root                 = '/var/lib/maas/media/'
